@@ -15,3 +15,4 @@ bin
 # vscode
 .vscode/
 
+pygoat-authz.code-workspace
