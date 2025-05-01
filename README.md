@@ -1,5 +1,7 @@
 # PyGoat
 
+This is an edit for Codeowners test
+
 [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/clintel-1100/pygoat-authz/badge)](https://scorecard.dev/viewer/?uri=github.com/clintel-1100/pygoat-authz)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
