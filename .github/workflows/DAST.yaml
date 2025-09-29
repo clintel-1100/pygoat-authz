@@ -26,10 +26,10 @@ jobs:
                   AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
                   AWS_DEFAULT_REGION: ${{ env.AWS_DEFAULT_REGION }}
 
-            - name: Checkout
-              uses: actions/checkout@v4
-              with:
-                  ref: master
+            # - name: Checkout
+            #   uses: actions/checkout@v4
+            #   with:
+            #       ref: master
 
             - name: Run ZAP Baseline Scan
               continue-on-error: true
