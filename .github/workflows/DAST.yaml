@@ -30,7 +30,7 @@ jobs:
               uses: actions/checkout@v4
               with:
                   ref: master
-                  path: pygoat-authz
+                  path: pygoatcs
 
             - name: Run ZAP Baseline Scan
               continue-on-error: true
