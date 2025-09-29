@@ -41,7 +41,12 @@ jobs:
             - name: Check result
               run: |
                   echo "After checkout:"
-                  ls -la
+                  echo "Current directory: $PWD"
+                  echo "GITHUB_WORKSPACE: $GITHUB_WORKSPACE"
+                  echo "Looking for .zap:"
+                  ls -la | grep zap
+                  echo "Full tree:"
+                  find . -name ".zap" -type d
 
             - name: Run ZAP Baseline Scan
               continue-on-error: true
