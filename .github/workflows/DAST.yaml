@@ -37,7 +37,6 @@ jobs:
               uses: zaproxy/action-baseline@v0.12.0
               with:
                   token: ${{ secrets.GITHUB_TOKEN }}
-                  working-directory: ${{ github.workspace }}/pygoat-authz
                   target: "http://34.214.106.150/"
                   rules_file_name: ".zap/rules.tsv"
                   #   cmd_options: "-m 5"
