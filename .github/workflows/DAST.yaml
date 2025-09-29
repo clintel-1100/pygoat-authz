@@ -26,11 +26,22 @@ jobs:
                   AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
                   AWS_DEFAULT_REGION: ${{ env.AWS_DEFAULT_REGION }}
 
+            - name: Debug paths
+              run: |
+                  echo "PWD: $PWD"
+                  echo "GITHUB_WORKSPACE: $GITHUB_WORKSPACE"
+                  ls -la
+
             - name: Checkout
               uses: actions/checkout@v4
               with:
                   ref: master
                   path: ${{ github.workspace }}
+
+            - name: Check result
+              run: |
+                  echo "After checkout:"
+                  ls -la
 
             - name: Run ZAP Baseline Scan
               continue-on-error: true
