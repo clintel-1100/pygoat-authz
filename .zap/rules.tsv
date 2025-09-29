@@ -1,0 +1,2 @@
+# Make sure to use tab spacing between each column or the action fails to read the rules
+10010   IGNORE  (Cookie No HttpOnly Flag)
