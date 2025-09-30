@@ -4,7 +4,7 @@
         <name>Pygoat Authentication</name>
         <desc/>
         <inscope>true</inscope>
-        <incregexes>http://34.214.106.150.*</incregexes>
+        <incregexes>http://54.245.18.200.*</incregexes>
         <tech>
             <include>Db</include>
             <include>Db.CouchDB</include>
@@ -55,7 +55,7 @@
         <authentication>
             <type>6</type>
             <strategy>POLL_URL</strategy>
-            <pollurl>http://34.214.106.150/</pollurl>
+            <pollurl>http://54.245.18.200/</pollurl>
             <polldata/>
             <pollheaders>
 </pollheaders>
@@ -64,16 +64,16 @@
             <loggedin>\Q 200 OK\E</loggedin>
             <loggedout>\Q 302 Found\E</loggedout>
             <browser>
-                <loginpageurl>http://34.214.106.150/login/</loginpageurl>
+                <loginpageurl>http://54.245.18.200/login</loginpageurl>
                 <browserid>chrome</browserid>
                 <loginpagewait>5</loginpagewait>
                 <stepdelay>0</stepdelay>
             </browser>
         </authentication>
         <users>
-            <user>627;true;dGVzdDI=;6;dGVzdDI=~cHlnb2F0MjI=~~30~6~U0hBMQ==~</user>
+            <user>138;true;dGVzdDE=;6;dGVzdDE=~cHlnb2F0MTE=~~30~6~U0hBMQ==~</user>
         </users>
-        <forceduser>627</forceduser>
+        <forceduser>138</forceduser>
         <session>
             <type>3</type>
         </session>
