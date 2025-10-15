@@ -4,7 +4,7 @@
         <name>Pygoat Authentication</name>
         <desc/>
         <inscope>true</inscope>
-        <incregexes>http://54.245.18.200.*</incregexes>
+        <incregexes>http://44.249.251.247.*</incregexes>
         <tech>
             <include>Db</include>
             <include>Db.CouchDB</include>
@@ -54,26 +54,23 @@
         </postparser>
         <authentication>
             <type>6</type>
-            <strategy>POLL_URL</strategy>
-            <pollurl>http://54.245.18.200/</pollurl>
+            <strategy>AUTO_DETECT</strategy>
+            <pollurl/>
             <polldata/>
-            <pollheaders>
-</pollheaders>
+            <pollheaders/>
             <pollfreq>60</pollfreq>
             <pollunits>REQUESTS</pollunits>
-            <loggedin>\Q 200 OK\E</loggedin>
-            <loggedout>\Q 302 Found\E</loggedout>
             <browser>
-                <loginpageurl>http://54.245.18.200/login</loginpageurl>
+                <loginpageurl>http://44.249.251.247/login</loginpageurl>
                 <browserid>chrome</browserid>
                 <loginpagewait>5</loginpagewait>
                 <stepdelay>0</stepdelay>
             </browser>
         </authentication>
         <users>
-            <user>138;true;dGVzdDE=;6;dGVzdDE=~cHlnb2F0MTE=~~30~6~U0hBMQ==~</user>
+            <user>174;true;dGVzdG9uZQ==;6;dGVzdG9uZQ==~dGVzdG9uZUBtYWlsLmNvbQ==~~30~6~U0hBMQ==~</user>
         </users>
-        <forceduser>138</forceduser>
+        <forceduser>174</forceduser>
         <session>
             <type>3</type>
         </session>
